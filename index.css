@@ -1,0 +1,35 @@
+.comp1.light {
+  background-color: #f0f0f0;
+  color: #212121;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.comp1.dark {
+  background-color: #212121;
+  color: #f0f0f0;
+  transition: background-color 0.5s, color 0.5s;
+}
+.btn.light{
+
+  background-color: #212121;
+   color: #f0f0f0;
+   border-radius: 20px;
+ 
+  
+}
+.btn.dark{
+    background-color: white;
+      color: #241313;border-radius: 20px;
+  
+ 
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+.comp1{
+  margin: 0%;
+  padding: 2%;
+  text-align: center;
+  border-radius:20px;
+}
