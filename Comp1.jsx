@@ -5,6 +5,14 @@ const Comp1 = () => {
   const [theme , setTheme] =useState('light');
   const toggleThemeeeee = () =>{
     setTheme((beforetheme => (beforetheme==="light" ? "dark" : "light")));
+
+  }
+  const [searchTerm, setSearchTerm] = useState("");
+
+
+
+  const handlesearch=(events)=>{
+    setSearchTerm(events.target.value);
   }
     
    //second things.........
@@ -17,6 +25,11 @@ const Comp1 = () => {
     <button className={`btn ${theme}`} onClick={
       toggleThemeeeee
     } >switch to  {theme==="light"?"dark":"light  "} mode  </button> 
+    <input type="text"
+    value={searchTerm}
+    onChange={handlesearch}
+    placeholder="Search movies..."
+    />
     </div >
   );
 };
